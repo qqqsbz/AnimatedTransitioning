@@ -18,15 +18,15 @@
 
 static NSString * const reuseIdentifier = @"XBPresentMoveCell";
 
-- (instancetype)init
-{
-    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-    layout.itemSize = CGSizeMake(150, 180);
-    layout.minimumInteritemSpacing = 10;
-    layout.minimumLineSpacing = 10;
-    self = [super initWithCollectionViewLayout:layout];
-    return self;
-}
+//- (instancetype)init
+//{
+//    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+//    layout.itemSize = CGSizeMake(150, 180);
+//    layout.minimumInteritemSpacing = 10;
+//    layout.minimumLineSpacing = 10;
+//    self = [super initWithCollectionViewLayout:layout];
+//    return self;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

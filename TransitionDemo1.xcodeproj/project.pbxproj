@@ -27,6 +27,11 @@
 		DC4223421CEC5E9A00EA679C /* rourou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4223411CEC5E9A00EA679C /* rourou.jpg */; };
 		DC4223441CEC6AB100EA679C /* push.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC4223431CEC6AB100EA679C /* push.gif */; };
 		DC4223461CEC6AB700EA679C /* present.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC4223451CEC6AB700EA679C /* present.gif */; };
+		DC42234A1CED4F2900EA679C /* XBAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4223491CED4F2900EA679C /* XBAnimationTransition.m */; };
+		DC42234D1CED50A500EA679C /* XBAnimationStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC42234C1CED50A500EA679C /* XBAnimationStartViewController.m */; };
+		DC4223501CED512700EA679C /* XBAnimationEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC42234F1CED512700EA679C /* XBAnimationEndViewController.m */; };
+		DC4223521CED519400EA679C /* duorou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC4223511CED519400EA679C /* duorou.jpg */; };
+		DC4223541CED911C00EA679C /* cycle.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC4223531CED911C00EA679C /* cycle.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,14 @@
 		DC4223411CEC5E9A00EA679C /* rourou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rourou.jpg; sourceTree = "<group>"; };
 		DC4223431CEC6AB100EA679C /* push.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = push.gif; sourceTree = "<group>"; };
 		DC4223451CEC6AB700EA679C /* present.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = present.gif; sourceTree = "<group>"; };
+		DC4223481CED4F2900EA679C /* XBAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAnimationTransition.h; sourceTree = "<group>"; };
+		DC4223491CED4F2900EA679C /* XBAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAnimationTransition.m; sourceTree = "<group>"; };
+		DC42234B1CED50A500EA679C /* XBAnimationStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAnimationStartViewController.h; sourceTree = "<group>"; };
+		DC42234C1CED50A500EA679C /* XBAnimationStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAnimationStartViewController.m; sourceTree = "<group>"; };
+		DC42234E1CED512700EA679C /* XBAnimationEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAnimationEndViewController.h; sourceTree = "<group>"; };
+		DC42234F1CED512700EA679C /* XBAnimationEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAnimationEndViewController.m; sourceTree = "<group>"; };
+		DC4223511CED519400EA679C /* duorou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duorou.jpg; sourceTree = "<group>"; };
+		DC4223531CED911C00EA679C /* cycle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cycle.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +107,7 @@
 		DC4223051CEACB9800EA679C /* TransitionDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				DC4223471CED4EF300EA679C /* CycleAnimationMove */,
 				DC42232E1CEC508E00EA679C /* PresentMove */,
 				DC4223201CEAEA7400EA679C /* MagicMove */,
 				DC4223091CEACB9800EA679C /* AppDelegate.h */,
@@ -112,6 +126,7 @@
 		DC4223061CEACB9800EA679C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC4223511CED519400EA679C /* duorou.jpg */,
 				DC4223411CEC5E9A00EA679C /* rourou.jpg */,
 				DC4223291CEAEDB300EA679C /* cover.jpg */,
 				DC4223071CEACB9800EA679C /* main.m */,
@@ -151,6 +166,20 @@
 				DC42233D1CEC547200EA679C /* XBPresentTransition.m */,
 			);
 			name = PresentMove;
+			sourceTree = "<group>";
+		};
+		DC4223471CED4EF300EA679C /* CycleAnimationMove */ = {
+			isa = PBXGroup;
+			children = (
+				DC4223531CED911C00EA679C /* cycle.gif */,
+				DC4223481CED4F2900EA679C /* XBAnimationTransition.h */,
+				DC4223491CED4F2900EA679C /* XBAnimationTransition.m */,
+				DC42234B1CED50A500EA679C /* XBAnimationStartViewController.h */,
+				DC42234C1CED50A500EA679C /* XBAnimationStartViewController.m */,
+				DC42234E1CED512700EA679C /* XBAnimationEndViewController.h */,
+				DC42234F1CED512700EA679C /* XBAnimationEndViewController.m */,
+			);
+			name = CycleAnimationMove;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4223541CED911C00EA679C /* cycle.gif in Resources */,
 				DC4223161CEACB9800EA679C /* LaunchScreen.storyboard in Resources */,
+				DC4223521CED519400EA679C /* duorou.jpg in Resources */,
 				DC4223131CEACB9800EA679C /* Assets.xcassets in Resources */,
 				DC42232A1CEAEDB300EA679C /* cover.jpg in Resources */,
 				DC4223111CEACB9800EA679C /* Main.storyboard in Resources */,
@@ -229,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC42234D1CED50A500EA679C /* XBAnimationStartViewController.m in Sources */,
+				DC4223501CED512700EA679C /* XBAnimationEndViewController.m in Sources */,
 				DC42230E1CEACB9800EA679C /* ViewController.m in Sources */,
 				DC4223311CEC50AE00EA679C /* XBPresentMoveViewController.m in Sources */,
 				DC42230B1CEACB9800EA679C /* AppDelegate.m in Sources */,
@@ -240,6 +273,7 @@
 				DC4223081CEACB9800EA679C /* main.m in Sources */,
 				DC42232D1CEAEDE900EA679C /* XBMagicCell.m in Sources */,
 				DC42231F1CEACC9000EA679C /* XBPresentOneTransition.m in Sources */,
+				DC42234A1CED4F2900EA679C /* XBAnimationTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
